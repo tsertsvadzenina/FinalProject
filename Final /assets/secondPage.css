@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --headerColor: #a393eb;
+    --bgColor: #f5c7f7;
+    --TextColor: #27296d;
+    --sectionColor: #5e63b6;
+}
+
+
+main {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+
+article {
+    display: flex;
+    gap: 20px;
+}
+
+
+article p {
+    height: inherit;
+    padding: 10px;
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --headerColor: #436850;
+    --bgColor: #FBFADA;
+    --TextColor: #12372A;
+    --sectionColor: #ADBC9F;
+}
+
+
+body {
+    background-color: var(--bgColor);
+}
+
+
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    background-color: var(--headerColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 3em;
+    background: linear-gradient(transparent 0%, transparent 100%), url('https://media.istockphoto.com/id/1061398870/vector/silver-glitter-shiny-vector-background.jpg?s=612x612&w=0&k=20&c=qSQ774l-VWUb16c3MkKgk6Axb_VLAwpi4Ju3gS5ri2s=');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 10px;
+    text-shadow: 0 0 15px whitesmoke;
+}
+
+
+
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: var(--TextColor);
+    font-size: 1.5rem;
+}
+
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--TextColor);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+header nav ul li a:hover {
+    color: whitesmoke
+}
+
+.active {
+    color: whitesmoke;
+}
+
+
+main {
+    min-height: 90vh;
+}
+
+
+
+footer {
+    padding: 8px;
+    background-color: var(--sectionColor);
+    color: var(--TextColor);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.left {
+    width: 60%;
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right {
+    width: 30%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 10px;
+    margin-left: 20px;
+
+}
+
+
+
+.left figure {
+    width: 60px;
+    height: 60px;
+}
+
+
+.left figure img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.left figure img:hover {
+    transform: scale(1.2);
+}
+
+.mail {
+    width: 100px !important;
+    height: 60px;
+}
+
+
+main {
+    margin-top: 100px;
+}
+
+main h2 {
+    text-align: center;
+    color: var(--TextColor);
+    text-shadow: 0 0 2px black;
+    font-size: 35px;
+    padding: 20px;
+}
+
+
+
+main .projects {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+
+
+.projects article {
+    box-shadow: 0 0 20px black;
+    width: 300px;
+    flex-shrink: 1;
+    transition: transform 0.3s ease-in-out;
+    padding-bottom: 30px;
+}
+
+
+.projects article:hover {
+    transform: scale(1.1);
+}
+
+.projects article figure {
+    width: 100%;
+    height: 45%;
+}
+
+.projects article figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.projects article h3, p {
+    padding: 10px;
+}
+
+.projects article h3 {
+    font-size: 23px;
+    color: var(--TextColor);
+    text-shadow: 0 0 5px gray;
+}
+
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.buttons button {
+    padding: 10px;
+    width: 45%;
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: var(--headerColor);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
