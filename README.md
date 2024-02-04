@@ -29,7 +29,7 @@ bash
 Copy code
 
 
-git clone   https://github.com/tsertsvadzenina/project1/
+git clone  https://github.com/tsertsvadzenina/project1/](https://github.com/tsertsvadzenina/FinalProject)
 
 
 Navigate to the Project Folder: Pages
